@@ -8,6 +8,6 @@ public class pipeMove : MonoBehaviour
 
     void Update()
     {
-        pipes.transform.position = transform.position + new Vector3(-0.014f, 0, 0);
+        pipes.transform.position = transform.position + new Vector3(-0.025f, 0, 0);
     }
 }

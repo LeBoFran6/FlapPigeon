@@ -9,6 +9,10 @@ public class start : MonoBehaviour
     public GameObject pipes;
     public GameObject spawner;
 
+    private void Start()
+    {
+        Screen.SetResolution(750, 1334, true);
+    }
     void Update()
     {
         if (Input.GetKeyDown("space"))

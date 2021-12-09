@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public float scrool = 0f;
+    public float scrool = -0.5f;
     public float rotation = 0;
-    public float thrust = 7f;
+    public float thrust = 5f;
 
     public GameObject ground;
     public Rigidbody2D player;
@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        scrool = scrool - 0.009f;
+        scrool = scrool - 0.013f;
 
         ground.transform.position = new Vector3(scrool, 0, 0);
 
@@ -32,6 +32,6 @@ public class Player : MonoBehaviour
             Flap.Play(0);
         }
 
-        player.transform.Rotate(0.0f, 0.0f, -0.1f, Space.World);
+        player.transform.Rotate(0.0f, 0.0f, -0.2f, Space.World);
     }
 }
